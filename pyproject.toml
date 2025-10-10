@@ -1,0 +1,16 @@
+[project]
+name = "classic-books-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.13.0",
+    "bs4>=0.0.2",
+    "datasets>=4.2.0",
+    "loguru>=0.7.3",
+    "pandas>=2.3.3",
+    "peft>=0.17.1",
+    "torch>=2.8.0",
+    "transformers>=4.57.0",
+]
