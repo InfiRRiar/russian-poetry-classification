@@ -47,12 +47,12 @@ async def main():
         pages_parsing = [parse_single_poem(page, session) for page in poems_pages]
         results = await asyncio.gather(*pages_parsing)
 
-        output = {"text": [], "author": []}
+        output = {"text": [], "label": []}
         for text, author in results:
             output["text"].append(text)
-            output["author"].append(author)
+            output["label"].append(author)
         df_output = pd.DataFrame(output)
-        df_output.to_csv("dataset/output.csv")
+        df_output.to_csv("dataset/output.csv", index=False)
 
 if __name__ == "__main__":
     asyncio.run(main())
