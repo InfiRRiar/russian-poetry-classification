@@ -1,0 +1,5 @@
+Here all saved models' states are stored. Launch notebooks/model_training.ipynb to get one.
+
+Then, it will be loaded to launch backend service.
+
+The name of loaded file is supposed to be indicated in .env file

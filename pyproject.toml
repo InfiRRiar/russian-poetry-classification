@@ -18,6 +18,7 @@ dependencies = [
     "peft>=0.17.1",
     "plotly>=6.3.1",
     "pymorphy2>=0.9.1",
+    "streamlit>=1.50.0",
     "torch>=2.8.0",
     "tqdm>=4.67.1",
     "transformers>=4.57.0",
