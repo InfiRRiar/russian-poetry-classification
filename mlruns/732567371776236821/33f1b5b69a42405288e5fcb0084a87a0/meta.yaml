@@ -1,0 +1,14 @@
+artifact_uri: file:///home/infirriar/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/Projects/Classic%20books%20classification/mlruns/732567371776236821/33f1b5b69a42405288e5fcb0084a87a0/artifacts
+end_time: 1770731863948
+entry_point_name: ''
+experiment_id: '732567371776236821'
+lifecycle_stage: active
+run_id: 33f1b5b69a42405288e5fcb0084a87a0
+run_name: optuna-trial-5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770731778636
+status: 3
+tags: []
+user_id: infirriar
