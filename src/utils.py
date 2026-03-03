@@ -1,7 +1,6 @@
 import pandas as pd
 from datasets import DatasetDict, Dataset, ClassLabel
 from transformers import BertTokenizer
-import torch
 
 author_to_label = {
     "blok": 0,

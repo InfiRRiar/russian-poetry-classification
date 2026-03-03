@@ -9,6 +9,7 @@ wheels/
 # Virtual environments
 .venv
 
-models/*
+*\.onnx
+*\.pt
 
 .env

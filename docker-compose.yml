@@ -1,0 +1,7 @@
+services:
+  frontend:
+    container_name: poets_front
+    build: 
+      context: .
+      dockerfile: src/services/frontend/Dockerfile
+    
