@@ -1,13 +1,9 @@
 import mlflow
 import numpy as np
-import pandas as pd
 import random
-import transformers
 import torch
 import optuna
-import os
 
-from datasets import DatasetDict, Dataset, ClassLabel
 from peft import LoraConfig
 from transformers import BertTokenizer
 from torch.utils.data import DataLoader
@@ -107,8 +103,6 @@ def main():
         test_data_loader=test_data_loader, 
         device=device
     )
-        
-    print(dataset["train"][0]["input_ids"])
     
     trainer.get_basic_model(model_from_hf)
     
