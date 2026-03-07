@@ -27,6 +27,8 @@ The task is a **multi-class text classification** problem:
 The dataset is relatively small and contains stylistically nuanced texts.  
 Evaluation focuses on **macro F1-score** due to class imbalance.
 
+Also I was interested in checking out my own poems in terms of famous poets' styles.
+
 ---
 
 ## Models
