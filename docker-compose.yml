@@ -1,7 +1,16 @@
 services:
   frontend:
-    container_name: poets_front
+    container_name: poems_frontend
     build: 
       context: .
       dockerfile: src/services/frontend/Dockerfile
-    
+  backend:
+    container_name: poems_backend
+    build: 
+      context: .
+      dockerfile: src/services/backend/Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

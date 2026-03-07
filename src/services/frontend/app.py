@@ -1,7 +1,7 @@
 import streamlit as st
 import httpx
 
-BACKEND_URL = "http://127.0.0.1:8000/process"
+BACKEND_URL = "http://poems_backend:8080/process"
 
 st.title("Poem classificator")
 
@@ -21,8 +21,7 @@ if st.button("Send"):
             if response.status_code == 200:
                 data = response.json()
                 st.success("Response received")
-                st.write("Received text:", data["received_text"])
-                st.write("Length:", data["length"])
+                st.write("Received text:", data["logits"])
             else:
                 st.error(f"Error {response.status_code}: {response.text}")
 

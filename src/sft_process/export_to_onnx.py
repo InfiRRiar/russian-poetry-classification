@@ -14,6 +14,11 @@ def export_model_to_onnx(torch_model_name: str, onnx_model_name: str, input_exam
         f=f"models/onnx/{onnx_model_name}.onnx",
         input_names=["input_ids", "attention_mask"],
         output_names=["logits"],
+        dynamic_axes={
+            "input_ids": {0: "batch_size", 1: "seq_len",},
+            "attention_mask": {0: "batch_size", 1: "seq_len"},
+            "logits": {0: "batch_size"}
+        },
         verbose=True,
         dynamo=False,
         do_constant_folding=False,

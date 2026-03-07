@@ -7,6 +7,11 @@ author_to_label = {
     "cvetaeva": 1,
     "pasternak": 2
 }
+label_to_author = {
+    0: "blok",
+    1: "cvetaeva",
+    2: "pasternak"
+}
 
 model_from_hf = "cointegrated/rubert-tiny2"
 
