@@ -6,7 +6,7 @@ A machine learning project for classifying poems by author using classical NLP m
 
 ## Project Goals
 
-- Compare classical ML approache with transformer-based model for text classification;
+- Compare classical ML approach with transformer-based model for text classification;
 
 **Learning goals:**
 
@@ -37,20 +37,11 @@ Also I was interested in checking out my own poems in terms of famous poets' sty
 
 **TF–IDF + Linear SVM**
 
-Used as a strong classical reference point.
-
 ---
 
 ### Main Model
 
 **BERT-based sequence classifier with LoRA fine-tuning**
-
-Instead of updating all transformer weights, LoRA adapters are trained inside attention layers.
-
-Reasons for this setup:
-- Enables training on limited hardware;
-- Allows faster experimentation;
-- Provides hands-on experience with parameter-efficient fine-tuning.
 
 A small pretrained backbone was intentionally chosen to allow local training and to evaluate how much performance can be extracted from a lightweight model.
 
